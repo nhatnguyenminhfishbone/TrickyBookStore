@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TrickyBookStore.View/1.0.0": {
+        "dependencies": {
+          "TrickyBookStore.Models": "1.0.0",
+          "TrickyBookStore.Services": "1.0.0"
+        },
+        "runtime": {
+          "TrickyBookStore.View.dll": {}
+        }
+      },
+      "TrickyBookStore.Models/1.0.0": {
+        "runtime": {
+          "TrickyBookStore.Models.dll": {}
+        }
+      },
+      "TrickyBookStore.Services/1.0.0": {
+        "dependencies": {
+          "TrickyBookStore.Models": "1.0.0"
+        },
+        "runtime": {
+          "TrickyBookStore.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrickyBookStore.View/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrickyBookStore.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TrickyBookStore.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

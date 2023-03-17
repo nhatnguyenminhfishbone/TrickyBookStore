@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "TrickyBookStore.Models/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/TrickyBookStore.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrickyBookStore.Models.dll": {}
+        }
+      },
+      "TrickyBookStore.Services/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "TrickyBookStore.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TrickyBookStore.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrickyBookStore.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TrickyBookStore.Models/1.0.0": {
+      "type": "project",
+      "path": "../TrickyBookStore.Models/TrickyBookStore.Models.csproj",
+      "msbuildProject": "../TrickyBookStore.Models/TrickyBookStore.Models.csproj"
+    },
+    "TrickyBookStore.Services/1.0.0": {
+      "type": "project",
+      "path": "../TrickyBookStore.Services/TrickyBookStore.Services.csproj",
+      "msbuildProject": "../TrickyBookStore.Services/TrickyBookStore.Services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "TrickyBookStore.Models >= 1.0.0",
+      "TrickyBookStore.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nhmi\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.View\\TrickyBookStore.View.csproj",
+      "projectName": "TrickyBookStore.View",
+      "projectPath": "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.View\\TrickyBookStore.View.csproj",
+      "packagesPath": "C:\\Users\\nhmi\\.nuget\\packages\\",
+      "outputPath": "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.View\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\nhmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.Models\\TrickyBookStore.Models.csproj": {
+              "projectPath": "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.Models\\TrickyBookStore.Models.csproj"
+            },
+            "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.Services\\TrickyBookStore.Services.csproj": {
+              "projectPath": "D:\\Trainning\\CleanCode\\TrickyBookStore\\TrickyBookStore.Services\\TrickyBookStore.Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
