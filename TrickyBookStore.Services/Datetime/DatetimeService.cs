@@ -12,14 +12,14 @@ namespace TrickyBookStore.Services.Datetime
         {
             DateTimeOffset startDate = new DateTime(year, month, 1);
             DateTimeOffset endDate = startDate.AddMonths(1).AddDays(-1);
-            Console.WriteLine("- End date: " + endDate.ToString());
+            Console.WriteLine("- End date: " + endDate.Date.ToString());
             return endDate;
         }
 
         public DateTimeOffset getStartDate(int year, int month)
         {
             DateTimeOffset startDate = new DateTime(year, month, 1);
-            Console.WriteLine("- Start date: " + startDate.ToString());
+            Console.WriteLine("- Start date: " + startDate.Date.ToString());
             return startDate;
         }
     }

@@ -20,8 +20,8 @@ namespace TrickyBookStore.View
             DateTimeOffset endDate = services.getEndDate(year, month);
 
             double total = services.getPayment(customerId, startDate, endDate);
-            Console.WriteLine("=> Total: " + total);
-            Console.ReadLine();
+            Console.WriteLine("=> Total Amount: " + total);
+            Console.ReadKey();
         }
     }
 }

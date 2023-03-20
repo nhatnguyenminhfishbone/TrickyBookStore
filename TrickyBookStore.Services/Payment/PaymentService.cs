@@ -67,7 +67,7 @@ namespace TrickyBookStore.Services.Payment
             Customer customer = CustomerService.GetCustomerById(customerId);
             IList<Subscription> customerSubscriptions = CustomerService.GetSubscriptions(customer);
             double total = 0;
-            Console.WriteLine("- Subscriptions user");
+            Console.WriteLine("- Subscriptions user: ");
             foreach (Subscription subscription in customerSubscriptions)
             {
                 Console.WriteLine("  + " + subscription.SubscriptionType.ToString() + " " + subscription.BookCategoryId);
@@ -90,6 +90,7 @@ namespace TrickyBookStore.Services.Payment
         {
             double discountPrice = 0;
             bool isCalculated = false;
+            double freePrice = 0.1;
 
             var isPremium = customerSubscriptions.FirstOrDefault(s => s.SubscriptionType == SubscriptionTypes.Premium);
 
@@ -120,7 +121,7 @@ namespace TrickyBookStore.Services.Payment
                 }
                 if (!isCalculated)
                 {
-                    discountPrice += book.Price * 0.1;
+                    discountPrice += book.Price * freePrice;
                 }
             }
             return discountPrice;

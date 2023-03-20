@@ -7,12 +7,12 @@ namespace TrickyBookStore.Services.Books
 {
     internal class BookService : IBookService
     {
+        IList<Book> allBooks = (IList<Book>)Store.Books.Data;
         public IList<Book> GetBooks(params long[] ids)
         {
             throw new NotImplementedException();
         }
 
-        IList<Book> allBooks = (IList<Book>)Store.Books.Data;
         public Book GetBook(long id)
         {
             Book book = new Book();

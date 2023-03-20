@@ -9,6 +9,7 @@ namespace TrickyBookStore.Services.Customers
 {
     internal class CustomerService : ICustomerService
     {
+        const int freeSubscription = 2;
         ISubscriptionService SubscriptionService { get; }
         IList<Customer> allCustomersInStore = (IList<Customer>)Store.Customers.Data; 
 
@@ -45,7 +46,7 @@ namespace TrickyBookStore.Services.Customers
                 return subscriptions;
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
-            return SubscriptionService.GetSubscriptions(2);
+            return SubscriptionService.GetSubscriptions(freeSubscription);
         }
     }
 }
